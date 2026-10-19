@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Cakes | Homemade Cakes in Vavuniya</title>
+  <meta name="description" content="Elite Cakes – handcrafted birthday, wedding and custom cakes, baked fresh at home in Vavuniya, Sri Lanka. Order on WhatsApp.">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600;700&family=Fredoka:wght@500;600;700&family=Noto+Sans+Tamil:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img src="images/logo.jpg" alt="Elite Cakes logo">
+        <span>Elite <b>Cakes</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#how" data-i18n="nav.how">How to Order</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#order" class="btn btn-dark btn-sm" data-i18n="nav.order">Order Now</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+          <span class="lang-thumb" aria-hidden="true"></span>
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="ta" aria-pressed="false" lang="ta">தமிழ்</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Homemade in Vavuniya 🇱🇰</p>
+          <h1 data-i18n="hero.title">Cakes baked with <span class="hl">love</span>, made for your moments.</h1>
+          <p class="lead" data-i18n="hero.lead">From birthdays to weddings, every Elite cake is baked fresh to order in our home kitchen, using quality ingredients and designed just the way you imagine it.</p>
+          <div class="hero-cta">
+            <a href="#order" class="btn btn-primary" data-i18n="hero.cta1">Order Your Cake</a>
+            <a href="#menu" class="btn btn-outline" data-i18n="hero.cta2">View Menu</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong data-count="500">0</strong><span data-i18n="hero.stat1">+ Cakes baked</span></li>
+            <li><strong data-count="100">0</strong><span data-i18n="hero.stat2">% Homemade</span></li>
+            <li><strong data-count="5">0</strong><span data-i18n="hero.stat3">★ Customer love</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="blob"></div>
+          <img src="images/logo.jpg" alt="Elite Cakes" class="hero-logo">
+          <span class="float-tag tag-1" data-i18n="hero.tag1">🎂 Custom designs</span>
+          <span class="float-tag tag-2" data-i18n="hero.tag2">🚚 Vavuniya delivery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-img reveal">
+          <img src="images/box.jpg" alt="Elite Cakes packaging box">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">Our Story</p>
+          <h2 data-i18n="about.title">A small kitchen with a big sweet tooth</h2>
+          <p data-i18n="about.p1">Elite Cakes started as a passion for baking for family and friends. Today, we bake for celebrations all over Vavuniya, but we still treat every order like it's for our own family.</p>
+          <p data-i18n="about.p2">Every cake is made from scratch, to order, never sitting on a shelf. That means fresh sponge, real cream and a design made just for you.</p>
+          <ul class="ticks">
+            <li data-i18n="about.t1">Fresh, made-to-order baking</li>
+            <li data-i18n="about.t2">Custom designs & themes</li>
+            <li data-i18n="about.t3">Eggless options on request</li>
+            <li data-i18n="about.t4">Beautifully packed, ready to gift</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Menu / Gallery ===== -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="menu.eyebrow">Our Menu</p>
+          <h2 data-i18n="menu.title">Something sweet for every occasion</h2>
+          <p data-i18n="menu.sub">Tap a cake to see it closer. Prices are starting prices and depend on size & design.</p>
+        </div>
+        <div class="filters reveal" id="filters">
+          <button class="chip active" data-filter="all" data-i18n="cat.all">All</button>
+          <button class="chip" data-filter="birthday" data-i18n="cat.birthday">Birthday</button>
+          <button class="chip" data-filter="wedding" data-i18n="cat.wedding">Wedding</button>
+          <button class="chip" data-filter="cupcakes" data-i18n="cat.cupcakes">Cupcakes</button>
+          <button class="chip" data-filter="custom" data-i18n="cat.custom">Custom</button>
+        </div>
+        <!-- Cards are rendered from the CAKES list in js/main.js -->
+        <div class="grid" id="cakeGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Packaging ===== -->
+    <section class="section packaging">
+      <div class="container pack-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="pack.eyebrow">Ready to Gift</p>
+          <h2 data-i18n="pack.title">Packed as beautifully as it's baked</h2>
+          <p data-i18n="pack.p">Every order leaves our kitchen in Elite Cakes branded boxes and bags, so your cake arrives safe and looks perfect when it's handed over.</p>
+          <a href="#order" class="btn btn-primary" data-i18n="pack.cta">Order a Gift Cake</a>
+        </div>
+        <div class="pack-imgs reveal">
+          <img src="images/bags-colour.jpg" alt="Elite Cakes pink and red gift bags">
+          <img src="images/bags-white.jpg" alt="Elite Cakes white gift bags">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How to order ===== -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="how.eyebrow">How It Works</p>
+          <h2 data-i18n="how.title">Your cake in 3 easy steps</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">1</span>
+            <h3 data-i18n="how.s1">Choose</h3>
+            <p data-i18n="how.s1p">Pick a cake from our menu or tell us your own idea, theme or photo reference.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">2</span>
+            <h3 data-i18n="how.s2">Message us</h3>
+            <p data-i18n="how.s2p">Fill in the order form below. It opens WhatsApp with all your details ready to send.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">3</span>
+            <h3 data-i18n="how.s3">Enjoy</h3>
+            <p data-i18n="how.s3p">Pick up or get it delivered in Vavuniya. Please order at least <b>2 days</b> in advance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Order form ===== -->
+    <section class="section order" id="order">
+      <div class="container order-card reveal">
+        <div class="order-info">
+          <p class="eyebrow" data-i18n="order.eyebrow">Place an Order</p>
+          <h2 data-i18n="order.title">Tell us about your cake</h2>
+          <p data-i18n="order.p">Fill in the details and tap <b>Send on WhatsApp</b>. Your message will be ready to send, and we'll reply to confirm the price & date.</p>
+          <div class="order-note" data-i18n="order.note">⏰ Please order at least 2 days ahead. Wedding cakes need 1–2 weeks.</div>
+        </div>
+        <form class="order-form" id="orderForm" novalidate>
+          <div class="field">
+            <label for="name" data-i18n="form.name">Your name *</label>
+            <input type="text" id="name" required placeholder="e.g. Kavya" data-i18n-ph="form.namePh">
+          </div>
+          <div class="field">
+            <label for="cake" data-i18n="form.cake">Cake type *</label>
+            <!-- Options are added from the CAKES list in js/main.js -->
+            <select id="cake" required></select>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="size" data-i18n="form.size">Size</label>
+              <select id="size">
+                <option value="1kg" data-i18n="size.1">1 kg</option>
+                <option value="1.5kg" data-i18n="size.15">1.5 kg</option>
+                <option value="2kg" data-i18n="size.2">2 kg</option>
+                <option value="3kg+" data-i18n="size.3">3 kg+</option>
+                <option value="box6" data-i18n="size.box6">Box of 6 (cupcakes)</option>
+                <option value="box12" data-i18n="size.box12">Box of 12 (cupcakes)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date" data-i18n="form.date">Needed on *</label>
+              <input type="date" id="date" required>
+            </div>
+          </div>
+          <div class="field">
+            <label data-i18n="form.delivery">Delivery</label>
+            <div class="toggle">
+              <label><input type="radio" name="delivery" value="pickup" checked> <span data-i18n="form.pickup">Pickup</span></label>
+              <label><input type="radio" name="delivery" value="delivery"> <span data-i18n="form.deliver">Delivery</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form.message">Message on cake</label>
+            <input type="text" id="message" placeholder="e.g. Happy Birthday Amma!" data-i18n-ph="form.messagePh">
+          </div>
+          <div class="field">
+            <label for="notes" data-i18n="form.notes">Design notes</label>
+            <textarea id="notes" rows="3" placeholder="Colours, theme, flavour, eggless…" data-i18n-ph="form.notesPh"></textarea>
+          </div>
+          <p class="form-error" id="formError" role="alert"></p>
+          <button type="submit" class="btn btn-whatsapp btn-block">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            <span data-i18n="form.submit">Send on WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="rev.eyebrow">Sweet Words</p>
+          <h2 data-i18n="rev.title">What our customers say</h2>
+        </div>
+        <div class="slider reveal" id="slider">
+          <div class="slides" id="slides">
+            <blockquote class="review">
+              <p data-i18n="rev.1">"The birthday cake was beautiful and tasted even better. Everyone at the party asked where we ordered it from!"</p>
+              <footer>★★★★★ <span data-i18n="rev.1n">Tharsha, Vavuniya</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p data-i18n="rev.2">"Ordered a custom cake for my son and it looked exactly like the picture I sent. So soft and fresh!"</p>
+              <footer>★★★★★ <span data-i18n="rev.2n">Rajan, Vavuniya</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p data-i18n="rev.3">"Lovely cupcakes for our office celebration. Nicely packed and delivered on time. Highly recommended."</p>
+              <footer>★★★★★ <span data-i18n="rev.3n">Nirosha, Vavuniya</span></footer>
+            </blockquote>
+          </div>
+          <div class="dots" id="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Find Us</p>
+          <h2 data-i18n="contact.title">Say hello 👋</h2>
+          <ul class="contact-list">
+            <li><span>📍</span><div data-i18n="contact.loc"><b>Location</b><br>Vavuniya, Sri Lanka<br><small>Home bakery: exact address shared on order</small></div></li>
+            <li><span>📞</span><div><b data-i18n="contact.phone">Phone / WhatsApp</b><br><a href="#" class="js-phone">+94 7X XXX XXXX</a></div></li>
+            <li><span>🕘</span><div data-i18n="contact.hours"><b>Opening hours</b><br>Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: Orders only</div></li>
+          </ul>
+          <a href="#" class="btn btn-whatsapp js-wa-link" target="_blank" rel="noopener" data-i18n="contact.cta">Chat on WhatsApp</a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Vavuniya map" src="https://www.google.com/maps?q=Vavuniya,Sri%20Lanka&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a href="#home" class="brand">
+        <img src="images/logo.jpg" alt="Elite Cakes logo">
+        <span>Elite <b>Cakes</b></span>
+      </a>
+      <p data-i18n="footer.tag">Homemade cakes, baked with love in Vavuniya.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Elite Cakes. <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="#" class="wa-float js-wa-link" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+    <figure>
+      <div class="lb-media" id="lbMedia"></div>
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
